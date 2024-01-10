@@ -1,0 +1,61 @@
+.lost-modal{
+    background-color: #3333333c;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1500;
+}
+
+.lost-modal>div{
+    width: min(80vw,800px);
+    height: 80vh;
+    background-color: #F0F0F0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid #333333 5px;
+    border-radius: min(1.282vh,1.282vh)
+}
+
+.lost-modal h1{
+    font-family: 'Bungee Inline', sans-serif;
+    margin: min(1vh,1vw);
+    font-size: min(8vh,8vw);
+    line-height: min(8vh,8vw);
+}
+
+.lost-modal h1.first{
+    color: #FF6347;
+}
+
+.lost-modal h1.second{
+    color: #333333;
+}
+
+.lost-modal h2{
+    font-family: 'Quicksand', sans-serif;
+    color: #333333;
+    font-size: min(7.775vh,7.775vw);
+    margin: min(1vh,1vw);
+}
+.lost-modal button{
+    background-color: transparent;
+    border:solid 5px #FF6347;
+    border-radius: min(1.282vw,1.282vh);
+    font-family: 'Quicksand', sans-serif;
+    color: #333333;
+    margin:min(3vh,3vw);
+    font-size: min(7.775vh,7.775vw);
+}
+
+.lost-modal button:hover{
+    background-color: #FF6347;
+    box-shadow: 0.5vw -0.5vw 1vw #33333388;
+    cursor: pointer;
+}

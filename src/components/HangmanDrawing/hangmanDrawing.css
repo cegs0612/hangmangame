@@ -1,0 +1,14 @@
+.hangman-drawing{
+    width: 100vw;
+    height: 35vh;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hangman-drawing>svg{
+    height: 35vh;
+    width: min(45vh,80vw);
+}

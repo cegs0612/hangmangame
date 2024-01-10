@@ -1,0 +1,7 @@
+.timer-div>h2{
+    font-family: 'Quicksand', sans-serif;
+    color: #333333;
+    font-size: min(7.775vh,7.775vw);
+    margin: 0;
+    width: fit-content;
+}

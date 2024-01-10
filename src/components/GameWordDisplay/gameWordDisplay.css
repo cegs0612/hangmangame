@@ -1,0 +1,26 @@
+.game-word-display{
+    width: 100vw;
+    height: 10vh;
+    position: fixed;
+    top: 50vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: min(1vh,1vw);
+}
+
+.game-word-display>.letter-div{
+    height: min(6.25vh,6.25vw);
+    width: min(7.5vh,7.5vw);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: min(1vh, 1vw) solid #FF6347;
+}
+.game-word-display>.letter-div>h2{
+    margin: 0;
+    font-family: 'Dosis', sans-serif;
+    font-size: min(3.8875vh, 3.8875vw);
+}

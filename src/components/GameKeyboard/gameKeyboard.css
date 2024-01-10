@@ -1,0 +1,43 @@
+.keyboard{
+    width: 100vw;
+    height: 40vh;
+    position: fixed;
+    top: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+    row-gap: min(5vh,5vw);
+    column-gap: min(5vh,5vw);
+}
+.keyboard>.key-container{
+    height: 30vh;
+    width: min(100vw,800px);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-items: center;
+    margin-bottom: 2.5vh;
+}
+.key-container>button{
+    height: min(8vh,8vw);
+    width:  min(8vh,8vw);
+    margin: min(1vh,1vw);
+    border-radius: min(1vh,1vw);
+    border-style: none;
+    font-family: 'Dosis', sans-serif;
+    font-size: min(3.8875vh, 3.8875vw);
+    color: #333333;
+}
+
+.keyboard-letter{
+    background-color: #2196F3;
+}
+
+.correct{
+    background-color: #4CAF50;
+}
+
+.incorrect{
+    background-color: #FFEB3B;
+}
