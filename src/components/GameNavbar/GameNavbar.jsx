@@ -28,7 +28,7 @@
             animate={{opacity:1, scale:1, transition:{duration:1, type:"spring"}}}
         >
 
-            <motion.img src="/logo.svg" alt="" 
+            <motion.img src="/hangmangame/img/logo.svg" alt="" 
                 whileHover={{
                     rotate:[0,3,0,-3,0],
                     transition:{duration:0.7, repeat:Infinity}                    
