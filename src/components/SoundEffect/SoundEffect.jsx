@@ -30,5 +30,5 @@ export function SoundEffect({ audioKey, src, volume, audioRef }) {
         };
     }, [volume, audioRef]);
 
-  return <audio key={audioKey} src={src} ref={audioRef} preload='auto' ></audio>;
+  return <audio key={audioKey} src={`/hangmangame${src}`} ref={audioRef} preload='auto' ></audio>;
 }

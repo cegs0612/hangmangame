@@ -6,9 +6,9 @@ function Music({volume}) {
     const audioRef = useRef(new Audio());
 
     const songSrc = [
-        '/music/track1.mp3',
-        '/music/track2.mp3',
-        '/music/track3.mp3',
+        '/hangmangame/music/track1.mp3',
+        '/hangmangame/music/track2.mp3',
+        '/hangmangame/music/track3.mp3',
     ];
 
     const setVolume = () => volume / 100;
