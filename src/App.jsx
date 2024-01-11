@@ -106,7 +106,7 @@ function App() {
       >
       <AnimatePresence>
         <motion.img 
-          src="/hangmangame/assets/logo.svg" 
+          src="/hangmangame/img/logo.svg" 
           alt="" 
           className="logo"
           key="logo"
