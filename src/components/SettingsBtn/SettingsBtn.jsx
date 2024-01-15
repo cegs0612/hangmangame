@@ -87,7 +87,25 @@ function SettingsBtn( {isSettingsOpen, setIsSettingsOpen, deviceOrientation, set
                     animate={"open"}
                     exit={"close"}
                 >SETTINGS</motion.h1>}
-                {isSettingsOpen && <>                    
+                {isSettingsOpen && <>  
+                    <motion.li
+                        variants={variantsListItems}
+                        initial={{opacity:0}}
+                        animate={"open"}
+                        exit={"close"}
+                        className="closebtn" 
+                        onHoverStart={()=>playHover()}
+                    >
+                        <button 
+                            onClick={()=>closeSettings()}
+                            onHoverStart={()=>playHover()} 
+                        >
+                            <svg className="close-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <line x1="4" y1="4" x2="16" y2="16" stroke="#F0F0F0" strokeWidth="2" />
+                                <line x1="16" y1="4" x2="4" y2="16" stroke="#F0F0F0" strokeWidth="2" />
+                            </svg>
+                        </button>
+                    </motion.li>              
                     <motion.li 
                         key="music1"
                         variants={variantsListItems}
@@ -127,23 +145,7 @@ function SettingsBtn( {isSettingsOpen, setIsSettingsOpen, deviceOrientation, set
                         />
                         <h2>{gameDifficulty}</h2>
                     </motion.li>
-                    <motion.li
-                        variants={variantsListItems}
-                        initial={{opacity:0}}
-                        animate={"open"}
-                        exit={"close"}
-                        className="closebtn" 
-                        onHoverStart={()=>playHover()}
-                    >
-                        <button 
-                            onClick={()=>closeSettings()}
-                            onHoverStart={()=>playHover()} 
-                        >
-                            <svg className="arrow-up" width="20" height="20" viewBox="0 0 20 20">
-                                <path d="M0 20 L 20 20 L 10 0 Z" />
-                            </svg>
-                        </button>
-                    </motion.li>
+                    
                     </>
                 }
                 </AnimatePresence>

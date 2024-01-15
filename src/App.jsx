@@ -160,7 +160,26 @@ function App() {
           key={"settingsBtn"}
           soundEffectFunctions={soundEffectFunctions}
         />
-        <button className='credits-btn' onClick={()=>openCredits()}>Credits</button>
+        <motion.button 
+          className='credits-btn' 
+          onClick={()=>openCredits()}
+          variants={{
+            settingsClosed: {
+              opacity: 1,
+              transition:{type:'spring', duration:1, bounce:0}
+            },
+            settingsOpenPortrait: {
+              opacity:0,
+              scale:0,
+              transition:{type:'spring', duration:1.5, bounce:0}
+            },
+            settingsOpenLandscape: {
+              opacity:1,
+              transition:{type: 'spring', duration:0.5 , bounce:0}
+            }
+          }}
+          animate={determineAnimation}
+        >Credits</motion.button>
       </AnimatePresence>  
       </motion.div>}  
       {isGameOpen && <Game

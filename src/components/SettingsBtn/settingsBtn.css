@@ -35,6 +35,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 .settingsDiv li{
     list-style:none;
@@ -45,8 +46,8 @@
     row-gap: 2vh;
 }
 .settingsDiv li.closebtn{
-    width: 100%;
-    border-radius: 20%;
+    width: auto;
+    align-self: flex-end;
 }
 .settingsDiv li>label{
     font-family: 'Quicksand', sans-serif;
@@ -69,18 +70,15 @@
     
 }
 .closebtn>button{
-    width: 100%;
-    background-color: transparent;
+    width: min(7.5vh,7.5vw);
+    height: min(7.5vh,7.5vw);
+    background-color: #333333;
     border: none;
-    border-radius: 2vw;
-    
+    border-radius: min(1.282vw,1.282vh)
 }
 .closebtn>button:hover{
     background-color: #1a1a1a88;
 }
-.arrow-up {
-    fill: #F0F0F0; 
-  }
 
 @media (orientation: portrait){
     .settingsDiv h1{
